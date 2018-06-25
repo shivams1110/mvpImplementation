@@ -1,6 +1,6 @@
-package com.ssalphax.mvpimplementation.ui.main;
+package com.ssalphax.mvpimplementation.ui.login;
 
-public interface MainView {
+public interface LoginView {
 
     void showProgress();
 

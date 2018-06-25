@@ -1,4 +1,4 @@
-package com.ssalphax.mvpimplementation.ui.main;
+package com.ssalphax.mvpimplementation.ui.login;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -12,9 +12,9 @@ import android.widget.Toast;
 import com.ssalphax.mvpimplementation.R;
 import com.ssalphax.mvpimplementation.ui.contacts.ContactActivity;
 
-public class MainActivity extends AppCompatActivity implements MainView{
+public class LoginActivity extends AppCompatActivity implements LoginView {
 
-    private MainPresenter presenter;
+    private LoginPresenter presenter;
 
     private EditText edtUsername;
     private EditText edtPwd;
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements MainView{
         edtPwd = findViewById(R.id.edtPwd);
         btnSubmit = findViewById(R.id.btnSubmit);
 
-        presenter = new MainPresenterImpl(this);
+        presenter = new LoginPresenterImpl(this);
 
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
